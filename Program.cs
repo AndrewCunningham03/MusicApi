@@ -1,4 +1,5 @@
 using Microsoft.EntityFrameworkCore;
+using MusicApi.Middleware;
 using MusicApi.Models;
 using System.Text.Json.Serialization;
 
@@ -30,6 +31,8 @@ namespace MusicApi
                 app.UseSwagger();
                 app.UseSwaggerUI();
             }
+
+            app.UseMiddleware<ApiKeyMiddleware>(); 
 
             app.UseHttpsRedirection();
 
