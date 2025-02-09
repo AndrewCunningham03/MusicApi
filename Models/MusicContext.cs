@@ -22,7 +22,7 @@ namespace MusicApi.Models
                 artistId = 1,
                 numberOfSongs = 16,
                 releaseDate = new DateOnly(1968, 10, 16),
-                albumLength = new TimeOnly(1,28,00)
+                albumLength = new TimeOnly(1, 28, 00)
 
             });
             modelBuilder.Entity<Song>().@HasData(
@@ -32,7 +32,7 @@ namespace MusicApi.Models
                     songName = "Come on",
                     albumId = 1,
                     artistId = 1,
-                    SongLength = new TimeOnly(00,04,59)
+                    SongLength = new TimeOnly(00, 04, 59)
                 });
             modelBuilder.Entity<Artist>().@HasData(
                 new Artist
@@ -46,5 +46,6 @@ namespace MusicApi.Models
                 });
             base.OnModelCreating(modelBuilder);
         }
+
     }
 }

@@ -2,11 +2,10 @@
 
 namespace MusicApi.Models
 {
-    public class Song
+    public class SongDto
     {
-        [Key]
         public int songId { get; set; }
-        [MaxLength(100)]
+
         public string songName { get; set; }
 
         public int albumId { get; set; }
@@ -14,7 +13,7 @@ namespace MusicApi.Models
         public int artistId { get; set; }
 
         public TimeOnly SongLength { get; set; }
-  
+
 
     }
 }
