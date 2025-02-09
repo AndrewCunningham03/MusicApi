@@ -1,5 +1,6 @@
 ﻿namespace MusicApi.Middleware
 {
+    //https://stackoverflow.com/questions/70277577/asp-net-core-simple-api-key-authentication
     public class ApiKeyMiddleware
     {
         private readonly RequestDelegate _next;
